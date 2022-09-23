@@ -1,0 +1,109 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: hsl(0, 0%, 95%); 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     font-family: 'Lexend Deca', sans-serif;
+     font-size: 15px;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+border-radius: 10px;
+overflow: hidden;
+}
+
+.flex .flex-item{
+padding: 40px;
+
+}
+
+.flex .first{
+    background-color: hsl(31, 77%, 52%);
+  
+}
+.flex .second{
+    background-color: hsl(184, 100%, 22%);
+}
+.flex .third{
+    background-color: hsl(179, 100%, 13%);
+}
+.title{
+    color: hsl(0, 0%, 95%);
+    font-size: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 25px 0;
+    text-transform: uppercase;
+}
+.descrption{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 13px;
+    padding-bottom: 60px;
+    line-height: 1.8;
+}
+
+.link{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    display: inline-block;
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    border:  2px solid hsl(0, 0%, 95%);
+    transition: .3s;
+    
+}
+.first .link{
+    color:  hsl(31, 77%, 52%);
+}
+.first .link:hover{
+    background-color: hsl(31, 77%, 52%);
+  
+    color:hsl(0, 0%, 95%) ;
+}
+
+.second .link{
+    color: hsl(184, 100%, 22%);
+}
+.second .link:hover{
+    background-color: hsl(184, 100%, 22%);
+  
+    color:hsl(0, 0%, 95%) ;
+}
+.third .link{
+    color: hsl(179, 100%, 13%);
+}
+.third .link:hover{
+    background-color: hsl(179, 100%, 13%);
+    
+    color:hsl(0, 0%, 95%) ;
+}
+@media only screen and (max-width:768px){
+    .flex{
+        grid-template-columns: 1fr;
+    }
+
+}
+@media only screen and (max-width:425px){
+    .flex{
+        margin: 2rem 2rem;
+    }
+}
+    
+
+   
+
+ 
